@@ -1,0 +1,115 @@
+﻿{
+    "logging": {
+        "level": "info",
+        "enableConsoleLog": true,
+        "enableConsoleColors": true,
+        "logFile": "",
+        "logBaseDirectory": "",
+        "perPoolLogFile": false
+    },
+    "banning": {
+        "manager": "integrated",
+        "banOnJunkReceive": true,
+        "banOnInvalidShares": false
+    },
+    "notifications": {
+        "enabled": false,
+        "email": {
+            "host": "smtp.example.com",
+            "port": 587,
+            "user": "user",
+            "password": "password",
+            "fromAddress": "info@yourpool.org",
+            "fromName": "support"
+        },
+        "admin": {
+            "enabled": false,
+            "emailAddress": "user@example.com",
+            "notifyBlockFound": true
+        }
+    },
+    "persistence": {
+        "postgres": {
+            "host": "127.0.0.1",
+            "port": 4582,
+            "user": "miningcore",
+            "password": "persimmon",
+            "database": "miningcore"
+        }
+    },
+    "paymentProcessing": {
+        "enabled": true,
+        "interval": 600,
+        "shareRecoveryFile": "recovered-shares.txt"
+    },
+    "pools": [{
+        "id": "next",
+        "enabled": true,
+        "coin": "nextcoin",
+        "address": "XHGGqYF3wFg7pwoKgyLms7yo9dmkB4NEfH",
+        "rewardRecipients": [{
+            "address": "XHGGqYF3wFg7pwoKgyLms7yo9dmkB4NEfH",
+            "percentage": 0
+        }],
+        "blockRefreshInterval": 0,
+        "jobRebroadcastTimeout": 10,
+        "clientConnectionTimeout": 600,
+        "banning": {
+            "enabled": true,
+            "time": 600,
+            "invalidPercent": 50,
+            "checkThreshold": 50
+        },
+        "ports": {
+            "3333": {
+                "listenAddress": "0.0.0.0",
+                "difficulty": 32500,
+                "name": "ASIC Mining",
+                "varDiff": {
+                    "minDiff": 32500,
+                    "targetTime": 15,
+                    "retargetTime": 90,
+                    "variancePercent": 30
+                }
+            }
+        },
+        "daemons": [
+        {
+            "host": "155.138.214.179",
+            "port": 10001,
+            "user": "H2f8iojCMU",
+            "password": "nT5tGuYecHZiiO5pRtYDgi",
+            "zmqBlockNotifySocket": "tcp://155.138.214.179:33454"
+        },
+        {
+            "host": "155.138.238.187",
+            "port": 10001,
+            "user": "zpKa1BdpMj",
+            "password": "WVIBfojkcA3C7bUzA4Si4c",
+            "zmqBlockNotifySocket": "tcp://155.138.238.187:33454"
+        },
+        {
+            "host": "207.246.86.19",
+            "port": 10001,
+            "user": "bTsTm7h5KY",
+            "password": "C0PVchHkJ0l8aE2H4e9NdQ",
+            "zmqBlockNotifySocket": "tcp://207.246.86.19:33454"
+        },
+        {
+            "host": "45.32.223.182",
+            "port": 10001,
+            "user": "SoF0qemQ0k",
+            "password": "SVtFUcqAKCyzEEIU0xvQJC",
+            "zmqBlockNotifySocket": "tcp://45.32.223.182:33454"
+        },
+      ],
+        "paymentProcessing": {
+            "enabled": true,
+            "minimumPayment": 10.0,
+            "payoutScheme": "PPLNS",
+            "payoutSchemeConfig": {
+                "factor": 2.0
+            }
+        }
+    }]
+}

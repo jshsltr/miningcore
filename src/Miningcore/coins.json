@@ -17,7 +17,7 @@
         "explorerTxLink": "https://blockchain.info/tx/{0}",
         "explorerAccountLink": "https://blockchain.info/address/{0}"
     },
-    "bitcoin": {
+    "next": {
         "name": "Nextcoin",
         "symbol": "NEXT",
         "family": "bitcoin",
