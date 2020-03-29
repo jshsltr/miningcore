@@ -29,6 +29,7 @@ namespace Miningcore.Blockchain
             { "ETN", "etnkQJwBCjmR1MfkU8D355ZWxxLMhs8miPrtKHWN4U3uUowq9ugeKccVBoEG3n13n74us5AkT8tEoTog46w4HBgn8sMuBRhm9h" },
             { "RVN", "RQPJF65UoodQ2aZUkfnXoeX6gib3GNwm9u" },
             { "TUBE", "bxdAFKYA5sJYKM3zcn3SLaLRjsFF582VE1Uv5NChrVLm6o6UF4SdbZBZLrTBD6yEFZDzuTQGBCa8FLpX8charjxH2G3iMRX6R" },
+            { "NEXT", "XFN56wZ58bqbYpY25XHDD6EVDimU9GrUyz"},
         };
     }
 

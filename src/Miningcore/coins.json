@@ -17,6 +17,24 @@
         "explorerTxLink": "https://blockchain.info/tx/{0}",
         "explorerAccountLink": "https://blockchain.info/address/{0}"
     },
+    "bitcoin": {
+        "name": "Nextcoin",
+        "symbol": "NEXT",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "http://www.nextplorer.xyz/block/$height$",
+        "explorerTxLink": "http://www.nextplorer.xyz/tx/{0}",
+        "explorerAccountLink": "http://www.nextplorer.xyz/address/{0}"
+    },
     "bitcoin-cash": {
         "name": "Bitcoin Cash",
         "symbol": "BCH",
